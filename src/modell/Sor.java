@@ -5,17 +5,15 @@ public class Sor {
     private int alkoholFok;
     private int mennyiseg;
     private boolean vilagos;
-    private boolean barna;
 
     public Sor() {
-        this(4,50, true, false);
+        this(4,500, true);
     }
 
-    public Sor(int alkoholFok, int mennyiseg, boolean vilagos, boolean barna) {
+    public Sor(int alkoholFok, int mennyiseg, boolean vilagos) {
         this.alkoholFok = alkoholFok;
         this.mennyiseg = mennyiseg;
         this.vilagos = vilagos;
-        this.barna = barna;
     }
 
     public int getAlkoholFok() {
@@ -30,13 +28,12 @@ public class Sor {
         return vilagos;
     }
 
-    public boolean isBarna() {
-        return barna;
-    }
 
     @Override
     public String toString() {
-        return "Sor{" + "alkoholFok=" + alkoholFok + ", mennyiseg=" + mennyiseg + ", vilagos=" + vilagos + ", barna=" + barna + '}';
+        String tipus = vilagos ? "világos" : "barna";
+        return String.format("alkohol: %d%%, mennyiség: %d ml, típus: %s", 
+                             alkoholFok, mennyiseg, tipus);
     }
     
     
