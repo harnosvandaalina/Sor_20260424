@@ -22,4 +22,13 @@ public class Asztal {
             System.out.println(sorok[i]);
         }
     }
+
+    public int getDb() {
+        return db;
+    }
+
+    public Sor[] getSorok() {
+        return sorok;
+    }
+    
 }
