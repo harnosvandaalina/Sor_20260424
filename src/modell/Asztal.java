@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modell;
 
-/**
- *
- * @author Felhasználó
- */
 public class Asztal {
+    private int Sor [];
+    private int db;
     
+    public void sorHozzaad(Sor sor){
+    
+    }
+    
+    public void megjelenites(){
+    
+    }
 }
